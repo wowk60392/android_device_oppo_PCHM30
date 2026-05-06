@@ -4,7 +4,7 @@
 /metadata         ext4     /dev/block/bootdevice/by-name/metadata         flags=display="Metadata"
 /data             ext4     /dev/block/bootdevice/by-name/userdata         flags=display="Data"
 /vendor           ext4     /dev/block/bootdevice/by-name/vendor           flags=display="Vendor";backup=1
-/external_sd      vfat     /dev/block/mmcblk1p1                           flags=display="External_sd"
+/external_sd      vfat     /dev/block/mmcblk1p1                           flags=display="External_sd";storage;wipeingui;removable;fsflags="utf8"
 /boot             emmc     /dev/block/bootdevice/by-name/boot             flags=display="Boot";backup=1;flashimg=1
 /recovery         emmc     /dev/block/bootdevice/by-name/recovery         flags=display="Recovery";backup=1;flashimg=1
 /misc             emmc     /dev/block/bootdevice/by-name/misc             flags=display="Misc";backup=1;flashimg=1
@@ -40,3 +40,4 @@
 /ablbak           emmc     /dev/block/bootdevice/by-name/ablbak           flags=display="Ablbak"
 /xbl              emmc     /dev/block/bootdevice/by-name/xbl              flags=display="Xbl"
 /xblbak           emmc     /dev/block/bootdevice/by-name/xblbak           flags=display="Xblbak"
+/usb_otg          atuo     /dev/block/sdd1 /dev/block/sdd                 flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"
