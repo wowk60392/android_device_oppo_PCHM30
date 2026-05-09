@@ -77,13 +77,14 @@ TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone17/temp"
 TW_OZIP_DECRYPT_KEY := 1C4C1EA3A12531AE491B21BB31613C11
 TW_INCLUDE_NTFS_3G := true
 
+# Disable screen blanking and timeout in TWRP
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
 
 # Logcat
-TWRP_EVENT_LOGGING := true
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
+TWRP_EVENT_LOGGING := false
+TWRP_INCLUDE_LOGCAT := false
+TARGET_USES_LOGD := false
 
 # Graphics
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
